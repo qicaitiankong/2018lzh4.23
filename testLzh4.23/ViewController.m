@@ -16,6 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    //
+    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height)];
+    NSString *urlStr = @"http://www.umei.cc/tags/shaonv.htm";
+    [self.view addSubview:webView];
+    //
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]]];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
