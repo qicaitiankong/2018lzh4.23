@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //远程修改
     self.view.backgroundColor = [UIColor whiteColor];
     //
     UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width, self.view.bounds.size.height)];
